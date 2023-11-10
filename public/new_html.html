@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #97cbd3c3;
+        }
+
+        .class {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid red;
+            width: 400px;
+            height: 400px;
+        }
+
+        video {
+            display: block;
+        }
+
+        .button {
+            position: relative;
+            background-color: #409EFF;
+            border: 5px solid #008bba00;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #ffffff;
+            padding: 5px 38px;
+            margin: 15px 2px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .test {
+            position: relative;
+            background-color: #ffffff00;
+            border: 5px solid #008bba00;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #a2c8de00;
+            padding: 5px 107px;
+            margin: 15px 2px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        canvas {
+            position: absolute;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="shu">
+        <button onClick="" class="test">CLOSE</button>
+        <button onClick="" class="test">CLOSE</button>
+        <!-- <button onClick="recordOrStop()" class="button">开始录制</button>
+        <button onClick="recordOrStop()" class="button">停止录制并保存视频</button> -->
+        <video id="video" width="640" height="480" autoplay muted></video>
+        <button onClick="OpenCamera()" class="button" > OPEN </button>
+        <button onClick="CloseCamera()" class="button" id="close"> CLOSE </button>
+        <button onClick="StartRecognition()" class="button"> RECOGNIZE </button>
+        <button onClick="StopRecognition()" class="button"> STOP </button>
+    </div>
+   
+    <script src="face-api.min.js"></script>
+    <script src="new_js.js"></script>
+</body>
+
+</html>
